@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+    width: 200px;
+}
+
+.resultContainer {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: right;
+  color: white;
+  background-color: black ;
+  width: 100%;
+}
+
+.container {  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "C C back div"
+    "no7 no8 no9 plus"
+    "no4 no5 no6 multi"
+    "no1 no2 no3 sub"
+    "no0 no0 no0 equal";
+    ;
+   
+}
+
+/*
+.theNumbers {  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  gap: 0;
+  grid-auto-flow: row;
+  grid-template-areas:
+  
+    "no7 no8 no9 "
+    "no4 no5 no6 "
+    "no1 no2 no3 "
+    "no0 no0 no0 ";
+
+}
+*/
+
+
+/*this is for calculator buttons */
+
+.calcButton1{
+    border: 1;
+  line-height: 2.5;
+  padding: 0px 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+
+  width: 100%;
+  
+  border-radius: 2px;
+  background-color: white;
+}
+
+.calcButtonClear{
+    border: 1;
+  line-height: 2.5;
+  padding: 0px 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+
+  width: 100%;
+  
+  border-radius: 2px;
+  background-color: white;
+}
+
+.calcButtonBack{
+    border: 1;
+  line-height: 2.5;
+  padding: 0px 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+
+  width: 100%;
+  
+  border-radius: 2px;
+  background-color: white;
+}
+
+
+.calcButton2{
+  border: 1;
+  line-height: 2.5;
+  padding: 0px 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+
+  width: 100%;
+  
+  border-radius: 2px;
+  background-color: orange;
+}
+
+/* areas for calculator */
+
+.C { grid-area: C; }
+
+.back { grid-area: back; }
+
+.div { grid-area: div; }
+
+.no7 { grid-area: no7; }
+
+.no8 { grid-area: no8; }
+
+.no9 { grid-area: no9; }
+
+.multi { grid-area: multi; }
+
+.no4 { grid-area: no4; }
+
+.no5 { grid-area: no5; }
+
+.no6 { grid-area: no6; }
+
+.sub { grid-area: sub; }
+
+.no1 { grid-area: no1; }
+
+.no2 { grid-area: no2; }
+
+.no3 { grid-area: no3; }
+
+.plus { grid-area: plus; }
+
+.no0 { grid-area: no0; }
+
+.equal { grid-area: equal; }
+
+.none { grid-area: none; }
